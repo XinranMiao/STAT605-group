@@ -1,0 +1,19 @@
+#!/bin/bash
+universe = vanilla
+log    =    log/test.log
+error  =  error/test.err
+output = output/test.out
+
+executable = ./test.sh
+
+#arguments = $(Process) 
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files =post.sh ,stringr_1.4.0.tgz,post.R, 00000021_s004_t000.csv, files.txt,http://proxy.chtc.wisc.edu/SQUID/chtc/R402.tar.gz, fastICA_1.2-2.tar.gz,ica.R,00000039_s005_t000.csv
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 1GB
+
+queue 1
