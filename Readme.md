@@ -1,8 +1,9 @@
 STAT605 Project
 
-Members:
+## Members:
 
-Zihang Wang, zwang2547\\
+Zihang Wang, zwang2547
+
 Jie Sheng, jsheng27
 
 Haoran Lu, hlu226
@@ -11,6 +12,7 @@ Luyang Fang, lfang45
 
 Xinran Miao, xmiao27
 
+## Parallel ICA:
 In order to run ICA via CHTC, you'll need to:
 1. Create a file with lines specifying the file name (`file.txt`).
 2. Put `file.txt`, `chtc/test.sh`, `chtc/test.sub`, `chtc/fastICA_1.2-2.tar.gz` in your working directory.
