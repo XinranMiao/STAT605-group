@@ -1,8 +1,8 @@
 #!/bin/bash
 universe = vanilla
-log    =    log/test.log
-error  =  error/test.err
-output = output/test.out
+log    =    log/test_$(Process).log
+error  =  error/test_$(Process).err
+output = output/test_$(Process).out
 
 executable = ./test.sh
 
@@ -10,7 +10,7 @@ arguments = $(Process)
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_input_files =00000021_s004_t000.csv, files.txt,http://proxy.chtc.wisc.edu/SQUID/chtc/R402.tar.gz, fastICA_1.2-2.tar.gz,ica.R,00000039_s005_t000.csv
+transfer_input_files = files.txt,http://proxy.chtc.wisc.edu/SQUID/chtc/R402.tar.gz, fastICA_1.2-2.tar.gz,ica.R,/home/xmiao27/data_eeg_age_v1/data2kaggle/eval/$(Process)
 
 request_cpus = 1
 request_memory = 1GB
