@@ -3,7 +3,6 @@
 # untar your R installation
 tar -xzf R402.tar.gz
 tar -xzf fastICA_1.2-2.tar.gz
-tar -xzf packages_FITSio.tar.gz
 echo 'Untar finished' 1>&2
 # make sure the script will use your R installation, 
 # and the working directory as its home location
