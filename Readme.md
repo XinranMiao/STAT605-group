@@ -1,10 +1,15 @@
 STAT605 Project
 
 Members:
+
 Zihang Wang, zwang2547
+
 Jie Sheng, jsheng27
+
 Haoran Lu, hlu226
+
 Luyang Fang, lfang45
+
 Xinran Miao, xmiao27
 
 In order to run ICA via CHTC, you'll need to:
