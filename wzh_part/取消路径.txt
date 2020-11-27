@@ -1,1 +1,0 @@
-cat name_part.txt | cut -d/ -f4 > name_part2.txt
