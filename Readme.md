@@ -2,8 +2,7 @@ STAT605 Project
 
 Members:
 
-Zihang Wang, zwang2547
-
+Zihang Wang, zwang2547\\
 Jie Sheng, jsheng27
 
 Haoran Lu, hlu226
