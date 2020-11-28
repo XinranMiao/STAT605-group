@@ -18,3 +18,4 @@ In order to run ICA via CHTC, you'll need to:
 2. Change the lines in `chtc/get_data.sh` to make sure you get a name list that you want. Say we get the output file named `name_part_eval.txt`, then run `cat name_part_eval.txt | cut -d/ -f4 > name_eval.txt` to get a list o file names.
 3. Change the directory in `chtc/test.sub` of getting .csv files into your directory.
 4. Run `condor_submit test.sub`.
+For each job, you'll get a .csv file with the first line indicating the age and the rest be the desired matrix.
