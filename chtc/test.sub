@@ -1,8 +1,8 @@
 #!/bin/bash
 universe = vanilla
-log    =    log/test_$(Process).log
-error  =  error/test_$(Process).err
-output = output/test_$(Process).out
+log    =    log/test.log
+error  =  error/test.err
+output = output/test.out
 
 executable = ./test.sh
 
@@ -10,10 +10,10 @@ arguments = $(Process)
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_input_files = files.txt,http://proxy.chtc.wisc.edu/SQUID/chtc/R402.tar.gz, fastICA_1.2-2.tar.gz,ica.R,/home/xmiao27/data_eeg_age_v1/data2kaggle/eval/$(Process)
+transfer_input_files =test.R,name_eval.txt,magrittr_2.0.1.tar.gz,glue_1.4.2.tar.gz,stringi_1.5.3.tar.gz,stringr_1.4.0.tgz,/home/xmiao27/group/data_eeg_age_v1/data2kaggle/eval/$(Process),file.txt, files.txt,http://proxy.chtc.wisc.edu/SQUID/chtc/R402.tar.gz, fastICA_1.2-2.tar.gz,ica.R
 
 request_cpus = 1
-request_memory = 1GB
-request_disk = 1GB
+request_memory = 700MB
+request_disk = 700MB 
 
-queue Process from files.txt
+queue Process from name_eval.txt
