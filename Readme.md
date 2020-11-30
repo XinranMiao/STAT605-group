@@ -1,6 +1,7 @@
-STAT605 Project
+# Age Prediction via Electroencephalogram Data (STAT 605 Group Project) 
+The origina data set comes from [Kaggle](https://www.kaggle.com/ayurgo/data-eeg-age-v1).
 
-## Members:
+## Contributors:
 
 Zihang Wang, zwang2547
 
