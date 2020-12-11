@@ -1,5 +1,5 @@
 # ===== read data =====
-setwd("/Users/hrl/Desktop/605Proj")
+#setwd("../kNN_codes/")
 load("comp20.RData")
 load("age.RData")
 dat20 <- X_20
