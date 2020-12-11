@@ -20,3 +20,9 @@ In order to run ICA via CHTC, you'll need to:
 3. Change the directory in [chtc/test.sub](https://github.com/XinranMiao/STAT605-group/blob/main/chtc/test.sub) of getting .csv files into your directory.
 4. Run `condor_submit test.sub`.
 For each job, you'll get a .csv file with the first line indicating the age and the rest be the desired matrix.
+
+## kNN Age Prediction:
+
+Our whole age prediction precedure is in [kNN.R](https://github.com/XinranMiao/STAT605-group/kNN_codes/kNN.R), including similarity, kNN, cross validation and evaluation on test set.
+
+Sepcificly, to predict the age for a single preson, use function [Find_Nearest(data, person, agedat, k)] in [kNN.R](https://github.com/XinranMiao/STAT605-group/kNN_codes/kNN.R), where [data] contains the mixing matrices of training set, [agedat] contains the ages of training set, [person] include the mixing matrix of whom you want to predict the age, [k] is defaulted to be 3 based on our cross validations. Note that since this is a kNN method, you may need to load the training data: [comp20.RData](https://github.com/XinranMiao/STAT605-group/kNN_codes/comp20.RData) for mixing matrices and [age.RData](https://github.com/XinranMiao/STAT605-group/kNN_codes/age.RData) for ages.
