@@ -15,8 +15,8 @@ Xinran Miao, xmiao27
 
 ## Parallel ICA:
 In order to run ICA via CHTC, you'll need to:
-1. Put [chtc/name.txt](https://github.com/XinranMiao/STAT605-group/chtc/name.txt), [chtc/get_data.sh](https://github.com/XinranMiao/STAT605-group/chtc/get_data.sh),[chtc/test.sh](https://github.com/XinranMiao/STAT605-group/chtc/test.sh), [chtc/test.sub](https://github.com/XinranMiao/STAT605-group/chtc/test.sub), [chtc/test.R](https://github.com/XinranMiao/STAT605-group/chtc/test.R) and `chtc/*.tar.gz`  in your working directory. Create directories `output`, `error` an `log`.
-2. Change the lines in [chtc/get_data.sh](https://github.com/XinranMiao/STAT605-group/chtc/get_data.sh) to make sure you get a name list that you want. Say we get the output file named `name_part_eval.txt`, then run `cat name_part_eval.txt | cut -d/ -f4 > name_eval.txt` to get a list of file names.
-3. Change the directory in [chtc/test.sub](https://github.com/XinranMiao/STAT605-group/chtc/test.sub) of getting .csv files into your directory.
+1. Put [chtc/name.txt](https://github.com/XinranMiao/STAT605-group/blob/main/chtc/name.txt), [chtc/get_data.sh](https://github.com/XinranMiao/STAT605-group/blob/main/chtc/get_data.sh),[chtc/test.sh](https://github.com/XinranMiao/STAT605-group/blob/main/chtc/test.sh), [chtc/test.sub](https://github.com/XinranMiao/STAT605-group/blob/main/chtc/test.sub), [chtc/test.R](https://github.com/XinranMiao/STAT605-group/blob/main/chtc/test.R) and `chtc/*.tar.gz`  in your working directory. Create directories `output`, `error` an `log`.
+2. Change the lines in [chtc/get_data.sh](https://github.com/XinranMiao/STAT605-group/blob/main/chtc/get_data.sh) to make sure you get a name list that you want. Say we get the output file named `name_part_eval.txt`, then run `cat name_part_eval.txt | cut -d/ -f4 > name_eval.txt` to get a list of file names.
+3. Change the directory in [chtc/test.sub](https://github.com/XinranMiao/STAT605-group/blob/main/chtc/test.sub) of getting .csv files into your directory.
 4. Run `condor_submit test.sub`.
 For each job, you'll get a .csv file with the first line indicating the age and the rest be the desired matrix.
